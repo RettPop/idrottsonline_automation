@@ -28,9 +28,13 @@
                     var rawText = $("#customRawTextField").val();
                     if (rawText.length > 0) {
                         result = findUsersInRawText(rawText, document.orgUsers);
-                        result;
                         addUsersToSelect(result.usersFound);
-                        $("#customRawTextField").val(result.invalidLines);
+                        var invalidLinesText = "";
+                        for (const lineIdx in result.invalidLines)
+                        {
+                            invalidLinesText += result.invalidLines[lineIdx] + "\n";
+                        }
+                        $("#customRawTextField").val(invalidLinesText);
                     }
                     else {
                         alert("Add the text with participants to parse");
