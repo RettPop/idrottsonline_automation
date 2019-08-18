@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Print user age
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  prints user age in the list of event participants
 // @author       You
 // @match        https://activity.idrottonline.se/Activities/Edit/*
@@ -26,5 +26,5 @@
         });
     }
 
-    setInterval(calcAge, 500);
+    setInterval(calcAge, 510);
 })();
