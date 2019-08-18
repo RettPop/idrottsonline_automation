@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Add users list
+// @name         Parse users from raw text
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
+// @version      0.2
+// @description  parses event participants list from input raw text
 // @author       You
 // @match        https://activity.idrottonline.se/Activities/Edit/*
 // @grant        none
